@@ -8,3 +8,6 @@ const scroll = new LocomotiveScroll({
 //  attach locomotive scroll min js
 //  some code from loco githb for js
 
+gsap
+gsap attach
+
