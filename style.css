@@ -9,6 +9,18 @@ html, body{
     height: 100%;
 }
 
+#minicircle{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #fff;
+    
+    position: absolute;
+    z-index: 99999;
+
+   
+    
+}
 #main{
     width: 100%;
     background-color: black;

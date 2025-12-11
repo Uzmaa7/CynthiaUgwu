@@ -8,6 +8,14 @@ const scroll = new LocomotiveScroll({
 //  attach locomotive scroll min js
 //  some code from loco githb for js
 
-gsap
-gsap attach
+// gsap
+// gsap attach
+
+function circleMouseFollower(){
+    window.addEventListener("mousemove", (e)=>{
+        document.querySelector("#minicircle").style.transform = `translate(${e.clientX}px, ${e.clientY}px)`;
+    })
+}
+circleMouseFollower();
+
 
