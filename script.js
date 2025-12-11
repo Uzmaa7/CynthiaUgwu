@@ -16,6 +16,32 @@ function circleMouseFollower(){
         document.querySelector("#minicircle").style.transform = `translate(${e.clientX}px, ${e.clientY}px)`;
     })
 }
+function firstpageAnimation(){
+    var tl = gsap.timeline();
+
+    tl.from("#nav", {
+        y: '-10',
+        opacity:0,
+        duration:1.5,
+        ease:Expo.easeInOut
+    })
+    .to(".boundingelem",{
+        y: 0,
+        ease: Expo.easeInOut,
+        duration:2,
+        stagger:0.2,
+        delay:-1
+    })
+    .from("#herofooter",{
+        y:-10,
+        opacity:0,
+        duration:1.5,
+        delay:-1,
+        ease:Expo.easeInOut
+    })
+}
+
 circleMouseFollower();
+firstpageAnimation();
 
 
