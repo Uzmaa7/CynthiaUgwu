@@ -71,11 +71,12 @@ Rotates based on mouse speed.
 Centers the image on the cursor using transform: translate(-50%, -50%).
 
 Uses pointer-events: none; to ensure the image does not block mouse interactions.
+---
 
 
 
 
-https://github.com/user-attachments/assets/6fc59cca-dd81-4dc1-905a-00354998b0e3
+![Video Ppppproject 2 (1)](https://github.com/user-attachments/assets/c72d1b0d-a2a4-4c6b-9bf5-48573d970793)
 
 
 
