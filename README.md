@@ -27,7 +27,7 @@ A visually interactive, smooth-scrolling portfolio website showcasing the work o
 
 ## Folder Structure
 
-Cynthia/
+```Cynthia/
 ├── index.html          # Main HTML file
 ├── style.css           # Main CSS styling
 ├── locomotive.css      # Locomotive Scroll CSS
@@ -38,7 +38,11 @@ Cynthia/
 ├── nfl.webp
 ├── cynthia.webp        # About section image
 └── .git/               # Git repository folder
+```
+
+
 ---
+
 
 ## Usage
 
