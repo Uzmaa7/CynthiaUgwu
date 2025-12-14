@@ -17,6 +17,7 @@ function circleMouseFollower(xscale, yscale){
     })
 }
 
+var timeout;
 function circleflat(){
     var xscale = 1;
     var yscale = 1;
@@ -26,6 +27,7 @@ function circleflat(){
 
     window.addEventListener("mousemove", (e)=>{
         clearTimeout(timeout);
+        
         var xdiff = e.clientX - xprev;
         var ydiff = e.clientY - yprev;
 
@@ -69,7 +71,46 @@ function firstpageAnimation(){
     })
 }
 
-circleMouseFollower();
+// circleMouseFollower();
 firstpageAnimation();
+
+
+
+// next task -> 3no elem ko select kro, uske bd 3no pr ek mousemove lgao
+// jb mousemove ho to mouse ki x and y position pta kro, ab mouse ki x,y
+// position ke badle us img ko show kro and us img ko move
+// kro, move krte wqt rotate kro, and jaise jaise mouse tez chale
+// waise waise rotation bhi tez ho jay
+
+
+
+document.querySelectorAll(".elem")
+.forEach(function (elem){
+
+    var rotate = 0;
+    var diffrot = 0;
+
+    elem.addEventListener("mouseleave", (e)=>{
+        gsap.to(elem.querySelector("img"),{
+            opacity:0,
+            ease:Power3,
+            duration:0.5,
+        })
+    })
+    elem.addEventListener("mousemove", (e)=>{
+        var diff = e.clientY - elem.getBoundingClientRect().top;
+
+        diffrot = e.clientX - rotate;
+        rotate = e.clientX;
+
+        gsap.to(elem.querySelector("img"), {
+            opacity:1,
+            ease:Power3,
+            top : diff,
+            left : e.clientX,
+            rotate : gsap.utils.clamp(-20, 20 , diffrot *0.5),
+        });
+    });
+});
 
 

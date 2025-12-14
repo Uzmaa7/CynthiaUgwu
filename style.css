@@ -7,6 +7,8 @@
 html, body{
     width: 100%;
     height: 100%;
+
+    overflow: hidden;
 }
 
 .bounding{
@@ -33,6 +35,8 @@ html, body{
 #main{
     width: 100%;
     background-color: black;
+
+    overflow: hidden;
 }
 
 #hero{
@@ -42,6 +46,9 @@ html, body{
 
     color: #fff;
     position: relative;
+
+    min-height: 100vh;
+    height: auto;
 }
 
 #nav{
@@ -172,6 +179,8 @@ html, body{
     justify-content: space-between;
 
     position: relative;
+
+    /* overflow: hidden; */
 }
 .elem h1{
     text-transform: uppercase;
@@ -187,7 +196,12 @@ html, body{
     z-index: 999;
 
     height: 130%;
-    display: none;
+    /* display: none; */
+
+    opacity:0;
+    pointer-events: none;
+
+     transform: translate(-50%, -50%);
 
 }
 
