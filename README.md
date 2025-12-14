@@ -20,7 +20,7 @@ A visually interactive, smooth-scrolling portfolio website showcasing the work o
 - **HTML5:** Semantic structure and content.
 - **CSS3:** Styling, Flexbox layout, and transitions.
 - **JavaScript (ES6):** DOM manipulation, cursor animations, and hover effects.
-- **GSAP (GreenSock Animation Platform):** Smooth animations and hover effects.
+- **GSAP :** Smooth animations and hover effects.
 - **Locomotive Scroll:** Smooth scrolling and scroll-based animations.
 
 ---
