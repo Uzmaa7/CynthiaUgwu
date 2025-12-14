@@ -25,6 +25,7 @@ function circleflat(){
     var yprev =0;
 
     window.addEventListener("mousemove", (e)=>{
+        clearTimeout(timeout);
         var xdiff = e.clientX - xprev;
         var ydiff = e.clientY - yprev;
 
@@ -35,6 +36,10 @@ function circleflat(){
         yprev =  e.clientY;
 
         circleMouseFollower(xscale, yscale);
+
+        timeout = setTimeout(function(){
+            document.querySelector("#minicircle").style.transform = `translate(${e.clientX}px, ${e.clientY}px) scale(1, 1)`;
+        },100);
     })
 }
 circleflat();
