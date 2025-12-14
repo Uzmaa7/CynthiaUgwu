@@ -76,7 +76,8 @@ Uses pointer-events: none; to ensure the image does not block mouse interactions
 
 
 
-![Video Ppppproject 2 (1)](https://github.com/user-attachments/assets/c72d1b0d-a2a4-4c6b-9bf5-48573d970793)
+![V](https://github.com/user-attachments/assets/0001737f-927f-40a8-a21a-4191289ea1a6)
+
 
 
 
