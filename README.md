@@ -76,7 +76,7 @@ Uses pointer-events: none; to ensure the image does not block mouse interactions
 
 
 
-![V](https://github.com/user-attachments/assets/0001737f-927f-40a8-a21a-4191289ea1a6)
+
 
 
 
