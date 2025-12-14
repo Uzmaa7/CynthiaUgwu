@@ -28,19 +28,16 @@ A visually interactive, smooth-scrolling portfolio website showcasing the work o
 ## Folder Structure
 
 Cynthia/
-│
-├── index.html # Main HTML file
-├── style.css # Main CSS styling
-├── locomotive.css # Locomotive Scroll CSS
-├── index.js # Optional JS (can include scroll initialization)
-├── script.js # Main JS for animations and cursor effects
-├── lucid-motors.webp # Project images
+├── index.html          # Main HTML file
+├── style.css           # Main CSS styling
+├── locomotive.css      # Locomotive Scroll CSS
+├── index.js            # Optional JS (can include scroll initialization)
+├── script.js           # Main JS for animations and cursor effects
+├── lucid-motors.webp   # Project image
 ├── baron-capital.webp
 ├── nfl.webp
-├── cynthia.webp # About section image
-└── .git/ # Git repository folder
-
-
+├── cynthia.webp        # About section image
+└── .git/               # Git repository folder
 ---
 
 ## Usage
