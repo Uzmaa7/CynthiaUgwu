@@ -11,11 +11,34 @@ const scroll = new LocomotiveScroll({
 // gsap
 // gsap attach
 
-function circleMouseFollower(){
+function circleMouseFollower(xscale, yscale){
     window.addEventListener("mousemove", (e)=>{
-        document.querySelector("#minicircle").style.transform = `translate(${e.clientX}px, ${e.clientY}px)`;
+        document.querySelector("#minicircle").style.transform = `translate(${e.clientX}px, ${e.clientY}px) scale(${xscale}, ${yscale})`;
     })
 }
+
+function circleflat(){
+    var xscale = 1;
+    var yscale = 1;
+
+    var xprev =0;
+    var yprev =0;
+
+    window.addEventListener("mousemove", (e)=>{
+        var xdiff = e.clientX - xprev;
+        var ydiff = e.clientY - yprev;
+
+        xscale = gsap.utils.clamp(0.8, 1.2, xdiff);
+        yscale = gsap.utils.clamp(0.8, 1.2, ydiff);
+
+        xprev = e.clientX;
+        yprev =  e.clientY;
+
+        circleMouseFollower(xscale, yscale);
+    })
+}
+circleflat();
+
 function firstpageAnimation(){
     var tl = gsap.timeline();
 
